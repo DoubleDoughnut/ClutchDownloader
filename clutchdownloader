@@ -1,0 +1,4 @@
+wget --no-check-certificate -O Clutch https://github.com/KJCracks/Clutch/releases/download/1.4.2/Clutch-1.4.2/
+mv Clutch /usr/bin/Clutch
+chown root:wheel /usr/bin/Clutch && chmod 755 /usr/bin/Clutch
+echo "Clutch is now installed, happy cracking!"
