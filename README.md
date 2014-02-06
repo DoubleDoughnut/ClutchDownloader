@@ -1,7 +1,7 @@
 ClutchDownloader
 ================
 
-A simple script that will download the latest version of Clutch.
+A simple script that will download the latest version of <a href=https://github.com/KJCracks/Clutch>Clutch</a>
 
 <b>Requirements:</b>
 
