@@ -5,7 +5,7 @@ apt-get install gawk
 apt-get install sed
 apt-get install grep
 # Downloading Clutch (looking for the newest version, grabbing the link, downloading)
-wget --no-check-certificate -O Clutch "https://github.com$(curl -k -L https://github.com/KJCracks/Clutch/releases/latest | grep "Clutch" | grep '\/download\/' | sed -e 's/"/ /g' | awk '{print $3}')"
+wget --no-check-certificate -O Clutch "https://github.com$(curl -k -L https://github.com/KJCracks/Clutch/releases/latest | grep "Clutch" | grep '\/download\/' | sed -e 's/"/ /g' | gawk '{print $3}')"
 # Moving Clutch to /usr/bin
 mv Clutch /usr/bin/Clutch
 # Setting Permissions
