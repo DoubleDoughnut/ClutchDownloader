@@ -5,4 +5,14 @@ A simple script that will download the latest version of Clutch.
 
 <b>Requirements:</b>
 
-- wget (get it by installing it through Cydia, or run 'apt-get install wget' in terminal)
+- wget
+- sed
+- gawk
+- grep
+- curl
+
+Dependencies above get installed automatically when you start the script!
+
+<b>Special Thanks To:</b>
+ttwj - for giving helping me with the curl part of the code
+tjglass - for implementing the configure clutch prompt
