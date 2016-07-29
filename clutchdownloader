@@ -7,6 +7,7 @@ apt-get install grep
 # Downloading Clutch (looking for the newest version, grabbing the link, downloading)
 wget --no-check-certificate -O Clutch "https://github.com$(curl -k -L https://github.com/KJCracks/Clutch/releases/latest | grep "Clutch" | grep '\/download\/' | sed -e 's/"/ /g' | gawk '{print $3}')"
 # Look for overdrive.dylib, if it doesn't exist - download it
+# NOTE: Not sure if Clutch uses overdrive anymore, but it will be downloaded anyways
 if [ ! -f /etc/clutch/overdrive.dylib ]
 then
 wget --no-check-certificate -O overdrive.dylib "https://github.com/CrackEngine/Overdrive/releases/download/2.0/overdrive.dylib"
@@ -27,11 +28,11 @@ if [ -e /etc/clutch/overdrive.dylib ]
 then
 chown root:mobile /etc/clutch/overdrive.dylib && chmod 644 /etc/clutch/overdrive.dylib
 fi
-echo "Clutch is now installed, happy cracking!"
-# Do you want to configure Clutch?
-read -p "Would you like to configure Clutch (y/n)?" choice
+echo "Clutch is now installed, happy dumping!"
+# Do you want to run Clutch?
+read -p "Would you like to run Clutch (y/n)?" choice
 case "$choice" in 
-  y|Y ) Clutch -c;;
+  y|Y ) Clutch;;
   n|N ) echo "Done";;
   * ) echo "invalid";;
 esac
