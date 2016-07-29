@@ -10,7 +10,7 @@ wget --no-check-certificate -O Clutch "https://github.com$(curl -k -L https://gi
 # NOTE: Not sure if Clutch uses overdrive anymore, but it will be downloaded anyways
 if [ ! -f /etc/clutch/overdrive.dylib ]
 then
-wget --no-check-certificate -O overdrive.dylib "https://github.com/CrackEngine/Overdrive/releases/download/2.0/overdrive.dylib"
+wget --no-check-certificate -O overdrive.dylib "https://github.com/DoubleDoughnut/Overdrive/releases/download/2.0/overdrive.dylib"
 fi
 # Moving Clutch to /usr/bin & overdrive.dylib to /etc/clutch
 mv Clutch /usr/bin/Clutch
